@@ -1,0 +1,100 @@
+/**
+ * OSG brand theme — white base + periwinkle #85A0D3
+ */
+
+:root {
+  --ifm-color-primary: #85A0D3;
+  --ifm-color-primary-dark: #6D8CC8;
+  --ifm-color-primary-darker: #6183C4;
+  --ifm-color-primary-darkest: #3D63AE;
+  --ifm-color-primary-light: #9DB4DC;
+  --ifm-color-primary-lighter: #A9BCE0;
+  --ifm-color-primary-lightest: #C2D0EA;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(133, 160, 211, 0.12);
+
+  --osg-periwinkle: #85A0D3;
+  --osg-periwinkle-bg: #F0F4FB;
+
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-shadow: 0 1px 0 0 #e8edf5;
+  --ifm-background-color: #ffffff;
+  --ifm-font-color-base: #1a2340;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #9DB4DC;
+  --ifm-color-primary-dark: #85A0D3;
+  --ifm-color-primary-darker: #7896CE;
+  --ifm-color-primary-darkest: #5577BE;
+  --ifm-color-primary-light: #B5C8E5;
+  --ifm-color-primary-lighter: #C2D0EA;
+  --ifm-color-primary-lightest: #D5DFEF;
+  --docusaurus-highlighted-code-line-bg: rgba(133, 160, 211, 0.2);
+
+  --osg-periwinkle-bg: #1a1f2e;
+
+  --ifm-navbar-background-color: #0f0f0f;
+  --ifm-navbar-shadow: 0 1px 0 0 #2a2a2a;
+  --ifm-background-color: #0f0f0f;
+  --ifm-background-surface-color: #1a1a1a;
+  --ifm-font-color-base: #e3e3e3;
+  --ifm-color-emphasis-300: #2a2a2a;
+}
+
+/* ── Navbar ── */
+.navbar__title {
+  color: var(--osg-periwinkle);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.navbar__link {
+  color: #1a2340;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--osg-periwinkle);
+}
+
+[data-theme='dark'] .navbar__link {
+  color: #e3e3e3;
+}
+
+[data-theme='dark'] .navbar__link:hover,
+[data-theme='dark'] .navbar__link--active {
+  color: var(--osg-periwinkle);
+}
+
+/* ── Footer ── */
+.footer--dark {
+  background-color: #1a2340;
+}
+
+[data-theme='dark'] .footer--dark {
+  background-color: #0a0a0a;
+}
+
+/* ── Table headers ── */
+table thead tr {
+  background-color: var(--osg-periwinkle-bg);
+  color: #1a2340;
+}
+
+[data-theme='dark'] table thead tr {
+  color: #e3e3e3;
+}
+
+[data-theme='dark'] table tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+[data-theme='dark'] table {
+  border-color: #2a2a2a;
+}
+
+[data-theme='dark'] table td,
+[data-theme='dark'] table th {
+  border-color: #2a2a2a;
+}
