@@ -11,8 +11,13 @@ const config: Config = {
     v4: true,
   },
 
-  url: "https://your-docusaurus-site.example.com",
-  baseUrl: "/",
+  url: "https://OSG-UK-Tech-Resources.github.io",
+  baseUrl: "/osg-tech-curriculum-docs/",
+
+  organizationName: "OSG-UK-Tech-Resources",
+  projectName: "osg-tech-curriculum-docs",
+
+  trailingSlash: false,
 
   onBrokenLinks: "throw",
 
