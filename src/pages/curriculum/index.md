@@ -64,16 +64,27 @@ pip install -r requirements.txt
 All problem sets are submitted via **Pull Request** on GitHub:
 
 1. **Fork** the `osg-dsa-python-psets` repo (one-time setup)
-2. **Implement** the `_solutions.py` file for the problem set you're working on
+2. **Implement** your solution — see below for what you can submit
 3. **Run tests locally** to make sure everything passes
 4. **Push** to your fork and open a PR titled `OSG-YourName-PSX`
 
 Two automated checks run on every PR:
 
-| Check                     | What It Does                                    |
-| ------------------------- | ----------------------------------------------- |
-| **Guard Protected Files** | Ensures you only modified `_solutions.py` files |
-| **Grade Problem Set**     | Runs the test suite and reports pass/fail       |
+| Check                     | What It Does                                           |
+| ------------------------- | ------------------------------------------------------ |
+| **Guard Protected Files** | Blocks changes to infrastructure and CI files          |
+| **Grade Problem Set**     | Runs the test suite and reports pass/fail              |
+
+**What you can submit:** You're free to include any of the following in your PR:
+- `_solutions.py` — your implementations
+- Jupyter notebooks (`.ipynb`) — for exploration and write-ups
+- Notes and write-ups (`.txt`, `.md`)
+- Timing output files or any other supporting files
+
+**What is blocked** (these files define the problem or CI pipeline and must not be changed):
+- `.github/` — CI workflows
+- `sorters.py`, `maze.py` — infrastructure that defines the problem
+- Test files (`test_*.py`)
 
 :::tip
 Open a **Draft PR** early to get CI feedback while you're still working. Convert to "Ready for Review" when you're done.
