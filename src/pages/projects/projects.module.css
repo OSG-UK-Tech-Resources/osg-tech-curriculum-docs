@@ -1,0 +1,250 @@
+/* ── Header ── */
+.header {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  background-color: var(--osg-periwinkle-bg);
+}
+
+.heading {
+  color: var(--ifm-font-color-base);
+}
+
+.subtitle {
+  color: var(--osg-periwinkle);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* ── Main ── */
+.main {
+  padding: 3rem 0 5rem;
+}
+
+/* ── Controls ── */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.search {
+  width: 100%;
+  max-width: 480px;
+  padding: 0.6rem 1rem;
+  border: 1.5px solid #d0d9ec;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.search:focus {
+  border-color: var(--osg-periwinkle);
+}
+
+[data-theme='dark'] .search {
+  border-color: #2a2a2a;
+  background-color: #1a1a1a;
+}
+
+[data-theme='dark'] .search:focus {
+  border-color: var(--osg-periwinkle);
+}
+
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tagBtn {
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  border: 1.5px solid #d0d9ec;
+  background: transparent;
+  color: #4a5568;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  line-height: 1.5;
+}
+
+.tagBtn:hover {
+  border-color: var(--osg-periwinkle);
+  color: var(--osg-periwinkle);
+}
+
+.tagBtnActive {
+  background-color: var(--osg-periwinkle);
+  border-color: var(--osg-periwinkle);
+  color: #ffffff;
+}
+
+.tagBtnActive:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+  color: #ffffff;
+}
+
+[data-theme='dark'] .tagBtn {
+  border-color: #2a2a2a;
+  color: #a0a0a0;
+}
+
+[data-theme='dark'] .tagBtn:hover {
+  border-color: var(--osg-periwinkle);
+  color: var(--osg-periwinkle);
+}
+
+/* ── Grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 996px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Project Card ── */
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid #e8edf5;
+  border-radius: 10px;
+  padding: 1.75rem;
+  background-color: #fafbfd;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+
+.card:hover {
+  border-color: var(--osg-periwinkle);
+  box-shadow: 0 4px 16px rgba(133, 160, 211, 0.18);
+  transform: translateY(-2px);
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+[data-theme='dark'] .card {
+  border-color: #2a2a2a;
+  background-color: #1a1a1a;
+}
+
+[data-theme='dark'] .card:hover {
+  border-color: var(--osg-periwinkle);
+  box-shadow: 0 4px 16px rgba(133, 160, 211, 0.1);
+}
+
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a2340;
+  margin: 0 0 0.6rem;
+  line-height: 1.4;
+}
+
+[data-theme='dark'] .cardTitle {
+  color: #e3e3e3;
+}
+
+.cardDesc {
+  font-size: 0.9rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0 0 1.25rem;
+  flex: 1;
+}
+
+[data-theme='dark'] .cardDesc {
+  color: #a0a0a0;
+}
+
+.cardTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.cardTag {
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background-color: var(--osg-periwinkle-bg);
+  color: var(--osg-periwinkle);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+[data-theme='dark'] .cardTag {
+  background-color: #1e2a3a;
+  color: #9DB4DC;
+}
+
+.cardCta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--osg-periwinkle);
+  margin-top: auto;
+}
+
+/* ── Ghost Card ── */
+.ghostCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border: 2px dashed #d0d9ec;
+  border-radius: 10px;
+  padding: 1.75rem;
+  min-height: 180px;
+  background: transparent;
+}
+
+[data-theme='dark'] .ghostCard {
+  border-color: #2a2a2a;
+}
+
+.ghostIcon {
+  font-size: 1.75rem;
+  color: #c0ccde;
+  line-height: 1;
+}
+
+[data-theme='dark'] .ghostIcon {
+  color: #3a3a3a;
+}
+
+.ghostText {
+  font-size: 0.9rem;
+  color: #b0bac8;
+  margin: 0;
+  text-align: center;
+}
+
+[data-theme='dark'] .ghostText {
+  color: #4a4a4a;
+}
+
+/* ── No results ── */
+.noResults {
+  color: #a0a0a0;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
