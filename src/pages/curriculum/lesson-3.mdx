@@ -1,0 +1,161 @@
+---
+title: "Lesson 3 · Linked Lists, Queues, Stacks & Hash Tables"
+description: Linear structures, FIFO/LIFO, and hashing.
+slug: /curriculum/lesson-3
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Lesson 3 · Linked Lists, Queues, Stacks & Hash Tables
+
+> _The data structures that power everything from browser history to trading systems._
+
+Your mentor will take you through the core linear data structures that show up constantly in interviews and real-world systems. You'll understand how linked lists differ from arrays at the memory level, learn FIFO and LIFO patterns, and see how hash tables enable O(1) lookups.
+
+---
+
+## What You'll Cover
+
+- **Linked Lists:** Singly vs doubly linked, nodes & pointers, operations & complexity, two-pointer technique, dummy nodes
+- **Queues (FIFO):** Enqueue/dequeue, real-world uses (task scheduling, BFS)
+- **Stacks (LIFO):** Push/pop, real-world uses (undo/redo, call stacks, bracket matching)
+- **Hash Tables:** Key-value storage, hash functions, collision handling (chaining vs open addressing)
+- **LeetCode walkthroughs** with your mentor
+
+---
+
+<Tabs>
+<TabItem value="self-study" label="📚 Self Study" default>
+
+> Watch these **before** your session. Each topic has one focused video — enough to learn the material on your own.
+
+### Linked Lists
+
+_Nodes and pointers — how linked lists differ from arrays at the memory level, and the two-pointer technique._
+
+<iframe
+  width="100%"
+  style={{aspectRatio: '16/9', border: 'none', marginBottom: '0.5rem'}}
+  src="https://video.cs50.io/zQI3FyWm144"
+  title="CS50 Short: Singly-Linked Lists"
+  allowFullScreen
+/>
+
+**CS50 Short: Singly-Linked Lists** · Harvard CS50 · ~10 min
+
+Precise, visual walkthrough of how singly-linked lists work in memory — nodes, pointers, insertion, and deletion. Watch this first.
+
+<iframe
+  width="100%"
+  style={{aspectRatio: '16/9', border: 'none', marginTop: '1rem', marginBottom: '0.5rem'}}
+  src="https://video.cs50.io/FHMPswJDCvU"
+  title="CS50 Short: Doubly-Linked Lists"
+  allowFullScreen
+/>
+
+**CS50 Short: Doubly-Linked Lists** · Harvard CS50 · ~8 min
+
+Builds on the singly-linked list video to show how bidirectional pointers work. Essential for understanding the full picture.
+
+📄 **Articles:**
+- [How Does a Linked List Work? — freeCodeCamp](https://www.freecodecamp.org/news/how-linked-lists-work/)
+- [Introduction to Linked List — GeeksforGeeks](https://www.geeksforgeeks.org/dsa/introduction-to-linked-list-data-structure/)
+
+---
+
+### Stacks
+
+_LIFO — bracket matching, undo/redo, call stacks. Deceptively simple, incredibly powerful._
+
+🎬 [**Algorithms Playlist — Abdul Bari ↗**](https://www.youtube.com/playlist?list=PLIY8eNdw5tW_zX3OCzX7NJ8bL1p6pWfgG) · ~20 min (Stack videos in playlist)
+
+Abdul Bari's stack lectures are among the clearest available. His whiteboard style makes LIFO, push/pop, and stack applications highly intuitive. Find the "Stack" videos in his playlist.
+
+📄 **Articles:**
+- [Intro to Stacks — freeCodeCamp](https://www.freecodecamp.org/news/intro-to-stacks-data-structure-and-algorithm-tutorial/)
+- [Stack Data Structure — Programiz](https://www.programiz.com/dsa/stack)
+
+---
+
+### Queues
+
+_FIFO — the foundation of BFS, task scheduling, and many real-world systems._
+
+🎬 [**Data Structures Playlist — WilliamFiset ↗**](https://www.youtube.com/playlist?list=PLDV1Zeh2NRsB6SWFMQvI6LDyWMEBwxV0q) · ~15 min (Queue section)
+
+WilliamFiset is a Google engineer whose data structures series is renowned for rigour and clarity. The queue videos cover FIFO, enqueue/dequeue, and real-world applications with clean animations.
+
+📄 **Articles:**
+- [Introduction to Queue — GeeksforGeeks](https://www.geeksforgeeks.org/dsa/introduction-to-queue-data-structure-and-algorithm-tutorials/)
+- [Queue Data Structure — Programiz](https://www.programiz.com/dsa/queue)
+
+---
+
+### Hash Tables
+
+_The single most used data structure in coding interviews — Two Sum, group anagrams, frequency counts all run on hash maps._
+
+🎬 [**Hash Table Implementation — NeetCode ↗**](https://neetcode.io/courses/dsa-for-beginners/27) · ~20 min
+
+NeetCode's hash map lesson is interview-focused: covers how hash functions work, collision handling, and links directly to practice problems.
+
+📄 **Articles:**
+- [Hash Table Explained — freeCodeCamp](https://www.freecodecamp.org/news/hash-tables/)
+- [Hash Table Data Structure — Programiz](https://www.programiz.com/dsa/hash-table)
+
+---
+
+### 📹 Full Supplementary Videos _(Optional)_
+
+> This comprehensive course covers stacks, queues, linked lists, and hash tables in exceptional depth. Come back to it if you want more detail or something from the focused videos above isn't clicking.
+
+<iframe
+  width="100%"
+  style={{aspectRatio: '16/9', border: 'none', marginBottom: '0.5rem'}}
+  src="https://www.youtube.com/embed/RBSGKlAvoiM"
+  title="Data Structures Easy to Advanced — freeCodeCamp"
+  allowFullScreen
+/>
+
+**Data Structures Easy to Advanced — freeCodeCamp** · ~8 hrs
+
+A complete data structures course by a Google engineer. Covers stacks, queues, linked lists, and hash tables with high-quality animations and implementations. Jump to specific timestamps for each data structure — you don't need to watch the full 8 hours in one sitting.
+
+</TabItem>
+</Tabs>
+
+---
+
+## LeetCode Practice
+
+### Linked Lists
+
+| Problem |
+| --- |
+| [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) |
+| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) |
+| [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) |
+| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) |
+| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) |
+
+### Stacks
+
+| Problem |
+| --- |
+| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) |
+| [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |
+| [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/) |
+
+### Hash Maps
+
+| Problem |
+| --- |
+| [Two Sum](https://leetcode.com/problems/two-sum/) |
+| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) |
+| [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) |
+| [Majority Element](https://leetcode.com/problems/majority-element/description) |
+
+---
+
+[← Back to Curriculum](/curriculum) &nbsp;|&nbsp; [Next: Heaps & Trees →](/curriculum/lesson-4)

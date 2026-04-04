@@ -1,0 +1,141 @@
+---
+title: "Lesson 1 · Computer Systems & Python Basics"
+description: Architecture fundamentals, Python syntax, and OOP.
+slug: /curriculum/lesson-1
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Lesson 1 · Computer Systems & Python Basics
+
+> _Understand what's happening under the hood, then write your first Python._
+
+This is where the technical journey begins. Your mentor will give you a grounding in how computers actually work — CPU, memory, OS, kernel — before diving into Python. You'll cover variables, control flow, functions, and object-oriented programming. By the end, you'll be writing real code.
+
+---
+
+## What You'll Cover
+
+- **Why architecture matters:** How understanding hardware makes you a better developer
+- **Key system components:** CPU, RAM, OS, kernel space vs user space, I/O
+- **Programming languages:** High-level vs low-level, compiled vs interpreted, and why Python is the go-to for interviews
+- **Python fundamentals:** Variables & types (`int`, `str`, `list`, `dict`, `set`), control flow (`if`/`elif`/`else`, `for`, `while`), function definitions
+- **OOP crash course:** Classes, inheritance, encapsulation, abstraction — the building blocks of clean code
+
+---
+
+<Tabs>
+<TabItem value="self-study" label="📚 Self Study" default>
+
+> Watch these **before** your session. Each topic has one focused video — enough to learn the material on your own.
+
+### How Computers Work
+
+_CPU, RAM, and how programs execute — understanding hardware makes everything else click._
+
+<iframe
+  width="100%"
+  style={{aspectRatio: '16/9', border: 'none', marginBottom: '0.5rem'}}
+  src="https://video.cs50.io/6mbFO0ZLMW8"
+  title="CS50 Short: Hardware"
+  allowFullScreen
+/>
+
+**CS50 Short: Hardware** · Harvard CS50 · ~20 min
+
+Harvard's gold-standard intro. Covers the CPU, RAM, hard disks, flash memory, and how programs load into memory.
+
+📄 **Articles:**
+- [Computer Organization and Architecture Tutorials — GeeksforGeeks](https://www.geeksforgeeks.org/computer-organization-and-architecture-tutorials/)
+- [Computer Hardware Architecture — Python for Everybody](https://runestone.academy/ns/books/published/py4e-int/intro/computerHardwareArch.html)
+
+---
+
+### Python Fundamentals
+
+_Variables, types, control flow, loops, and functions — everything you need to start coding._
+
+<iframe
+  width="100%"
+  style={{aspectRatio: '16/9', border: 'none', marginBottom: '0.5rem'}}
+  src="https://www.youtube.com/embed/VchuKL44s6E"
+  title="Python as Fast as Possible — Tech With Tim"
+  allowFullScreen
+/>
+
+**Python as Fast as Possible — Tech With Tim** · ~75 min
+
+A condensed, high-speed run through all the essentials. Great for students who want to learn Python quickly or who already have some coding experience and just need a Python syntax refresher.
+
+📄 **Articles:**
+- [Python Variables — GeeksforGeeks](https://www.geeksforgeeks.org/python/python-variables/)
+- [Python Data Types — GeeksforGeeks](https://www.geeksforgeeks.org/python/python-data-types/)
+
+---
+
+### Object-Oriented Programming (OOP)
+
+_Classes, objects, inheritance, encapsulation — one of the most tested concepts in technical interviews._
+
+🎬 [**Python OOP Tutorials — Corey Schafer ↗**](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc) · ~1.5 hrs (playlist)
+
+The best OOP tutorial series for Python. Walks through classes and instances, class vs instance variables, inheritance, special (dunder) methods, and property decorators. Watch all 6 videos in sequence — they build on each other.
+
+📄 **Articles:**
+- [Object-Oriented Programming in Python — Real Python](https://realpython.com/python3-object-oriented-programming/)
+- [Inheritance and Composition in Python — Real Python](https://realpython.com/inheritance-composition-python/)
+
+---
+
+### 📹 Full Supplementary Videos _(Optional)_
+
+> These longer courses go much deeper. Come back to them if you want more detail or something from the focused videos above isn't clicking.
+
+🎬 [**Python Programming Beginner Tutorials — Corey Schafer ↗**](https://www.youtube.com/playlist?list=PL-osiE80TeTskrapNbzXhwoFUiLCjGgY7) · ~9 hrs (playlist)
+
+The single best free Python beginner series on YouTube. Covers everything: variables, data types, control flow, loops, and functions. Work through it at your own pace — skip topics you already know.
+
+---
+
+<iframe
+  width="100%"
+  style={{aspectRatio: '16/9', border: 'none', marginBottom: '0.5rem'}}
+  src="https://www.youtube.com/embed/Ej_02ICOIgs"
+  title="Object Oriented Programming with Python — freeCodeCamp"
+  allowFullScreen
+/>
+
+**Object Oriented Programming with Python — freeCodeCamp** · ~2 hrs
+
+A complete OOP course covering constructors, class vs static methods, inheritance, and getters/setters. Good as a second pass to reinforce Corey Schafer's series.
+
+---
+
+🎬 [**Crash Course Computer Science — Playlist (Episodes 1–4) ↗**](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo) · ~45 min
+
+Episodes 1–4 cover how computers work, binary, the CPU, and memory. Beautifully animated and designed for absolute beginners.
+
+</TabItem>
+</Tabs>
+
+---
+
+## Homework — [Problem Set 1: Python Fundamentals](https://github.com/OSG-UK-Tech-Resources/osg-dsa-python-psets/blob/main/ps1/ps1.ipynb)
+
+```
+📂 ps1/
+├── ps1.ipynb            ← Read this first (guided walkthrough)
+├── ps1_solutions.py     ← Implement your solutions here
+└── test_ps1.py          ← Run to check your work
+```
+
+**What you'll build:** Practice with loops, recursion, and list manipulation to cement the Python basics from the lesson.
+
+```bash
+pytest ps1/test_ps1.py -v
+```
+
+---
+
+[← Back to Curriculum](/curriculum) &nbsp;|&nbsp; [Next: Lists, Arrays, Big O & Sorting →](/curriculum/lesson-2)

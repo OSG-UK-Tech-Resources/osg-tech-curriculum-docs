@@ -1,0 +1,228 @@
+---
+title: "Lesson 5 · Graphs & Dynamic Programming"
+description: Graph representations, BFS, Dijkstra's, and DP patterns.
+slug: /curriculum/lesson-5
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Lesson 5 · Graphs & Dynamic Programming
+
+> _The most powerful (and most asked) topics in technical interviews._
+
+Graphs model relationships — social networks, maps, dependencies. DP solves problems that would otherwise take exponential time. Together, they represent the peak of what interviewers test. Your mentor will cover representations, traversal algorithms, and the DP mindset.
+
+---
+
+## What You'll Cover
+
+- **Graph fundamentals:** Nodes, edges, directed vs undirected, weighted vs unweighted
+- **Representations:** Adjacency matrix, adjacency list, hash table of hash tables
+- **Graph traversal:** DFS (recursion/stack) and BFS (queue) — O(V + E) complexity
+- **Shortest path algorithms:** Dijkstra's, plus awareness of Bellman-Ford and Floyd-Warshall
+- **Dynamic Programming:** Overlapping subproblems, optimal substructure, memoisation vs tabulation
+- **DP problem patterns** with worked examples
+
+---
+
+<Tabs>
+<TabItem value="self-study" label="📚 Self Study" default>
+
+> Watch these **before** your session. Each topic has one focused video — enough to learn the material on your own.
+
+### Graph Fundamentals & Representations
+
+_Nodes, edges, directed vs undirected, weighted vs unweighted — and the two main ways to represent a graph._
+
+🎬 [**Intro to Graphs — NeetCode DSA for Beginners, Lesson 28 ↗**](https://neetcode.io/courses/dsa-for-beginners/28) · ~22 min
+
+NeetCode's concise introduction to graphs — nodes, edges, directed vs undirected, weighted vs unweighted, and the two main representation styles. Interview-focused and links directly to LeetCode practice.
+
+📄 **Articles:**
+- [Graph Algorithms in Python: BFS, DFS, and Beyond — freeCodeCamp](https://www.freecodecamp.org/news/graph-algorithms-in-python-bfs-dfs-and-beyond/)
+- [Complete Guide to Graph Data Structure — Ajit Singh](https://singhajit.com/data-structures/graph/)
+
+---
+
+### Graph Traversal — BFS & DFS
+
+_Two of the most important algorithms you will learn — nearly every graph problem is a variation of one of them._
+
+🎬 [**Graph Traversal Crash Course — freeCodeCamp ↗**](https://www.freecodecamp.org/news/coding-interview-graph-traversal-crash-course-the-only-one-youll-ever-need/) · Article + Video
+
+Covers BFS (queue-based, layer-by-layer) and DFS (stack/recursion, deep exploration) with interview-oriented explanations and visual animations.
+
+📄 **Articles:**
+- [Breadth-First Search (BFS) — GeeksforGeeks](https://www.geeksforgeeks.org/dsa/breadth-first-search-or-bfs-for-a-graph/)
+- [BFS vs DFS — PuppyGraph](https://www.puppygraph.com/blog/depth-first-search-vs-breadth-first-search)
+
+---
+
+### Dijkstra's Shortest Path Algorithm
+
+_The most important shortest-path algorithm — tested at top firms (especially quant/finance) and powers your Problem Set 7c maze solver._
+
+🎬 [**Dijkstra's Shortest Path — Abdul Bari ↗**](https://www.youtube.com/playlist?list=PLIY8eNdw5tW_zX3OCzX7NJ8bL1p6pWfgG) · ~25 min (Dijkstra's videos in playlist)
+
+Abdul Bari's Dijkstra's lecture is whiteboard-based and extremely clear. His worked examples are particularly helpful for building the manual trace intuition that interviews often test.
+
+📄 **Articles:**
+- [Dijkstra's Algorithm — A Detailed and Visual Introduction — freeCodeCamp](https://www.freecodecamp.org/news/dijkstras-shortest-path-algorithm-visual-introduction/)
+- [Dijkstra's Algorithm — GeeksforGeeks](https://www.geeksforgeeks.org/dsa/dijkstras-shortest-path-algorithm-greedy-algo-7/)
+
+---
+
+### Dynamic Programming
+
+_The hardest and most rewarding topic in the curriculum — master memoisation and tabulation and you unlock a huge class of problems._
+
+<iframe
+  width="100%"
+  style={{aspectRatio: '16/9', border: 'none', marginBottom: '0.5rem'}}
+  src="https://www.youtube.com/embed/oBt53YbR9Kk"
+  title="Dynamic Programming — Learn to Solve Algorithmic Problems — freeCodeCamp"
+  allowFullScreen
+/>
+
+**Dynamic Programming — freeCodeCamp** · ~5 hrs
+
+**Start here.** The definitive beginner DP course. Alvin Zablan builds DP intuition from scratch — starting with Fibonacci and grid traversal, then systematically teaching memoisation (top-down) and tabulation (bottom-up) patterns. Work through it over a few days, not in one sitting.
+
+📄 **Articles:**
+- [The Beginner's Guide to Dynamic Programming — Jason Qiu](https://medium.com/@jason_qiu/the-beginners-guide-to-dynamic-programming-38fa1053f152)
+- [Dynamic Programming for Beginners — freeCodeCamp](https://www.freecodecamp.org/news/learn-dynamic-programing-to-solve-coding-challenges/)
+- [Tabulation vs Memoisation — GeeksforGeeks](https://www.geeksforgeeks.org/dsa/tabulation-vs-memoization/)
+
+---
+
+### 📹 Full Supplementary Videos _(Optional)_
+
+> The most comprehensive free graph algorithms course available. Come back to it if you want more depth — you don't need to watch it end to end; use it as a reference for specific sections.
+
+<iframe
+  width="100%"
+  style={{aspectRatio: '16/9', border: 'none', marginBottom: '0.5rem'}}
+  src="https://www.youtube.com/embed/09_LlHjoEiY"
+  title="Algorithms Course — Graph Theory Tutorial from a Google Engineer — freeCodeCamp"
+  allowFullScreen
+/>
+
+**Graph Theory Tutorial from a Google Engineer — WilliamFiset on freeCodeCamp** · ~7 hrs
+
+Covers graph representations, DFS, BFS, Dijkstra's, Bellman-Ford, Floyd-Warshall, MST, and more. Topics relevant to this lesson are in the first ~2 hours. Jump to specific sections as needed.
+
+---
+
+🎬 [**1-D Dynamic Programming — NeetCode DSA for Beginners ↗**](https://neetcode.io/courses/dsa-for-beginners/0) · DP section
+
+NeetCode's DP lessons bridge the freeCodeCamp course above to actual LeetCode problems — Climbing Stairs, House Robber, Coin Change. Use this after the freeCodeCamp course to start applying what you've learned.
+
+</TabItem>
+</Tabs>
+
+---
+
+## Problem Sets
+
+### Maze Series
+
+[PS7a](https://github.com/OSG-UK-Tech-Resources/osg-dsa-python-psets/blob/main/ps7a/ps7a.ipynb), [PS7b](https://github.com/OSG-UK-Tech-Resources/osg-dsa-python-psets/blob/main/ps7b/ps7b.ipynb), and [PS7c](https://github.com/OSG-UK-Tech-Resources/osg-dsa-python-psets/blob/main/ps7c/ps7c.ipynb) are a single escalating series — the same maze environment, each problem set adding a new twist.
+
+**Problem Set 7a — Maze BFS**
+
+```
+📂 ps7a/
+├── ps7a.ipynb           ← BFS on mazes explained
+├── ps7a_solutions.py    ← Your maze solver
+├── maze-*.txt           ← Test mazes (sample, dense, horizontal, vertical, empty)
+└── test_ps7a.py         ← Automated tests
+```
+
+**What you'll build:** Implement BFS to find the shortest path through a maze. Classic graph search in action.
+
+```bash
+pytest ps7a/test_ps7a.py -v
+```
+
+**Problem Set 7b — Maze BFS + Superpowers**
+
+```
+📂 ps7b/
+├── ps7b.ipynb           ← BFS with expanded state space
+├── ps7b_solutions.py    ← Your enhanced maze solver
+├── maze-*.txt           ← Same mazes, new powers
+└── test_ps7b.py         ← Automated tests
+```
+
+**What you'll build:** Your maze solver can now **break through walls** — but only a limited number of times. You'll expand the BFS state space to track remaining superpowers. A real interview-level twist.
+
+```bash
+pytest ps7b/test_ps7b.py -v
+```
+
+**Problem Set 7c — Haunted Maze**
+
+```
+📂 ps7c/
+├── ps7c.ipynb           ← Dijkstra's on weighted mazes
+├── ps7c_solutions.py    ← Your Dijkstra implementation
+├── haunted-maze-*.txt   ← Spooky mazes with ghost costs
+└── test_ps7c.py         ← Automated tests
+```
+
+**What you'll build:** The maze is now haunted — wall spirits have a "fear cost" proportional to their ASCII value. Implement Dijkstra's algorithm to find the path of least fear. Weighted graph pathfinding, done properly.
+
+```bash
+pytest ps7c/test_ps7c.py -v
+```
+
+---
+
+### Travelling Salesman Problem
+
+[Problem Set 8: TSP](https://github.com/OSG-UK-Tech-Resources/osg-dsa-python-psets/blob/main/ps8/ps8.ipynb) is the capstone — it ties together graphs, trees, and greedy algorithms in a single problem.
+
+```
+📂 ps8/
+├── ps8.ipynb            ← TSP & MST-based approximation explained
+├── ps8_solutions.py     ← Your implementation
+├── tenpoints.txt        ← Test data (10, 20, 50, 100 cities)
+├── twentypoints.txt
+├── fiftypoints.txt
+├── hundredpoints.txt
+└── test_ps8.py          ← Automated tests
+```
+
+**What you'll build:** Implement a 2-approximation algorithm for the Travelling Salesman Problem — build a Minimum Spanning Tree using Prim's algorithm, then extract a tour via DFS shortcutting.
+
+```bash
+pytest ps8/test_ps8.py -v
+```
+
+---
+
+## LeetCode Practice
+
+### Dynamic Programming
+
+| Problem |
+| --- |
+| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) |
+| [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/description/) |
+| [House Robber](https://leetcode.com/problems/house-robber/) |
+| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) |
+| [Coin Change](https://leetcode.com/problems/coin-change/description/) |
+
+### Graphs
+
+| Problem |
+| --- |
+| [Number of Islands](https://leetcode.com/problems/number-of-islands/description/) |
+| [Max Area of Island](https://leetcode.com/problems/max-area-of-island/description/) |
+| [Clone Graph](https://leetcode.com/problems/clone-graph/description/) |
+| [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/description/) |
+
+---
+
+[← Back to Curriculum](/curriculum) &nbsp;|&nbsp; [Next: Tackling the Coding Interview →](/curriculum/lesson-6)
